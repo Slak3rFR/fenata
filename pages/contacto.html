@@ -25,30 +25,28 @@
                     <li><a class="link" href="../pages/productos.html">Productos</a></li>
                     <li><a class="link" href="../pages/nosotros.html">Nosotros</a></li>
                     <li><a class="link" href="../pages/contacto.html">Contacto</a></li>
-                    <!-- <li><a class="link" href="./pages/carrito.html">Carrito</a></li>     -->
+                    <button class="btnNav" href="#">
+                        <img class="imgNav" src="../img/iconos.img/buscar2.svg" alt="imagen buscar">
+                    </button>
+                    <button class="btnNav" href="#">
+                        <a href="../pages/carrito.html">
+                            <img class="imgNav" src="../img/iconos.img/carritodecompras.svg" alt="imagen carrito">
+                        </a>
+                    </button>
+                    <button class="btnNav" href="#">
+                        <a href="../pages/cuenta.html">
+                            <img class="imgNav" src="../img/iconos.img/usuario2.svg" alt="imagen user">
+                        </a>
+                    </button>
                 </ul>
-                <button class="btnNav" href="#">
-                    <img class="imgNav" src="../img/iconos.img/buscar2.svg" alt="imagen buscar">
-                </button>
-                <button class="btnNav" href="#">
-                    <a href="../pages/carrito.html">
-                        <img class="imgNav" src="../img/iconos.img/carritodecompras.svg" alt="imagen carrito">
-                    </a>
-                </button>
-                <button class="btnNav" href="#">
-                    <a href="../pages/cuenta.html">
-                        <img class="imgNav" src="../img/iconos.img/usuario2.svg" alt="imagen user">
-                    </a>
-                </button>
             </nav>
         </div>
         <h1 class="titulo_principal">Encontrá el outfit que siempre soñaste</h1>
     </header>
     <main>
         <h2>Contactanos</h2>
-        <div class="formularioContacto">
             <h3>Formulario de contacto</h3>
-            <form>
+            <form class="formularioContacto">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
                 <label for="email">Email:</label>
@@ -57,7 +55,6 @@
                 <textarea id="message" name="message" rows="4" placeholder="Dejanos tu mensaje" required></textarea>
                 <button class="btnEnviar" type="submit" value="Enviar">Enviar</button>
             </form>
-        </div>
         <div class="whatsappBtn">
             <a href="https://api.whatsapp.com/send/?phone=3425145402" target="_blank">
                 <img src="../img/iconos.img/whatsapp.png" alt="imagen whatsapp">
