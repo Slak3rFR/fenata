@@ -1,0 +1,52 @@
+.parrafoProductos{
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;   
+}
+.btnTLP{
+    margin-top: 20px;
+}
+.containerTodosLosProductos{
+    display: grid;    
+    grid-template-columns: repeat(4,1fr);
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+    text-align: justify;
+}
+.carta {
+    display: grid;
+    width: 400px;
+    height: 550px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 auto;
+    justify-items: center;
+    background-color: #ffffff;
+}
+.imgTLP{
+    width: 380px;
+    height: 380px;
+    margin: 10px;
+    padding: 10px;
+    justify-items: center;
+}
+.dropdownProductos {
+    text-align: left;
+    padding: 10px;
+    margin: 10px 10px;
+}
+.dropdownProductos button {
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px 30px;
+}
+.dropdown-item {
+    font-size: 16px;
+}

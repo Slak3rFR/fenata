@@ -7,7 +7,6 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
-
 }
 html {
     font-size: 62.5%; /* 1 rem = 10px */    
@@ -26,7 +25,7 @@ header {
     text-align: center;
     padding: 20px 0;
 }
-.container_logo {
+.containerLogo {
     text-align: left;
     
 }
@@ -64,7 +63,7 @@ header div nav button .imgNav {
     margin: 5px;
     background-color: #343838;
 }
-.titulo_principal {
+.tituloPrincipal {
     font-size: 40px;
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 10px rgb(0, 0, 0);
@@ -214,7 +213,6 @@ div .imgProducto {
     width: 220px !important;
     font-size: 15px !important;
     margin: 10px;
-
 }
 .imgProducto p{
     padding: 10px;
@@ -294,7 +292,6 @@ main .todasLasCatParrafo{
 hr {
     color: white;
     border-top: 2px solid;
-
 }
 .btnEnviar {
     padding: 10px 20px;
@@ -356,6 +353,7 @@ input, textarea{
     border-radius: 20px;
     font-size: 16px;
     background-color: #f8eece;
+    margin: 5px;
 }
 main .formularioContacto{
     display: inline-block;
@@ -612,6 +610,12 @@ footer h4 {
     }
     iframe {
         width: 400px;
+    }
+    main section div .tituloCarrusel {
+        font-size: 10px !important;
+    }
+    main section div .parrafoCarrusel {
+        font-size: 14px !important;
     }
 }
 @media (max-width:  550px) {
