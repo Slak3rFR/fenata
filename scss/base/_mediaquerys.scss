@@ -1,5 +1,4 @@
-@media (max-width: 1450px) {
-    
+@media (max-width: 1450px) {    
     .containerTodosLosProductos {
     display: grid;    
     grid-template-columns: repeat(3,1fr) !important;
@@ -11,9 +10,7 @@
     text-align: justify;
     }
 }
-
-@media (max-width: 1270px) {
-    
+@media (max-width: 1270px) {    
     .containerTodosLosProductos {
     display: grid;    
     grid-template-columns: repeat(2,1fr) !important;
@@ -23,38 +20,57 @@
     margin-bottom: 30px;
     padding: 5px;
     text-align: justify;
-    }
-    .containerTodosLosProductos .carta img{
-        width: 400px;
-        height: 400px;
-    }
-    .containerTodosLosProductos .carta {
+    .carta {
         width: 450px;
+        .imgTLP{
+        width: 400px;
+        height: 400px;}
+        }
     }
 }
 @media (max-width: 1060px) {
-    header div nav ul .link{
-        width: 130px;
+    body {
+        header{
+        .containerHeader {
+            flex-direction: column;  
+            .containerLogo {
+                .logo {
+                    margin: 10px;}
+                }   
+            .lista_nav {
+                .lista {
+                    li {
+                        .link{
+                            width: 130px;}
+                    }
+                }    
+            }
+        }    
+        .imgCarrusel {
+            height: 700px !important;
+            }
+        }
+        main .containerTodasLasCat .todasLasCatParrafo {
+            text-align: justify;
+            padding: 10px !important;
+            margin: 10px 10px !important;
+            }
+            .containerNosotros {
+                display: grid;
+                grid-template-columns: repeat(1,1fr) !important;
+                .imgNosotros {
+                    width: 40% !important;
+                }
+                .parrafoNosotros {
+                    margin: 10px;
+                    padding: 10px;
+                }
+            }
     }
-    .logo {
-        margin: 10px;
-    }
-    .containerHeader {
-        flex-direction: column;
-    }
-    .imgCarrusel {
-        height: 700px !important;
-    }
-    main section .todasLasCatParrafo {
-        text-align: justify;
-        padding: 10px;
-        margin: 10px 10px;
-    }
-    .containerNosotros {
-        display: grid;
-        grid-template-columns: repeat(1,1fr) !important;
 }
-}
+
+
+
 @media (max-width: 930px) {
     .containerImagen {
         img {
@@ -78,14 +94,12 @@
         .containerTodosLosProductos .carta {
             width: 450px;
         }
-
 }
 @media (max-width:  840px) {
     header div nav ul .link{
         width: 100px;
         margin: 5px;
-    }
-    
+    }    
     ul.lista {
         flex-wrap: wrap;
         margin: 0;
@@ -94,10 +108,10 @@
     .imgCarrusel {
         height: 500px !important;
     }
-    main section .todasLasCatParrafo {
+    main .containerTodasLasCat .todasLasCatParrafo {
         text-align: justify;
-        padding: 10px;
-        margin: 10px 20px;
+        padding: 10px !important;
+        margin: 10px 10px !important;
     }
     main .formularioContacto {
         width: 80% !important;
@@ -136,8 +150,8 @@
         height: 300px !important;
     }
     .imgNuevoIngreso {
-        width: 300px;
-        height: 300px;
+        width: 300px !important;
+        height: 300px !important;
         margin: 10px;
         padding: 0;
     }
@@ -151,21 +165,21 @@
         width: 280px;
         height: 280px;
     }
-    section div div .imgNuevoIngreso {
-        width: 270px;
-        height: 270px;
+    main .containerTodasLasCat .containerProducto .imgProducto .imgNuevoIngreso {
+        width: 270px !important;
+        height: 270px !important;
     }
-    main section .todasLasCatParrafo {
+    main .containerTodasLasCat .todasLasCatParrafo {
         text-align: justify;
-        padding: 10px;
-        margin: 10px 10px;
+        padding: 10px !important;
+        margin: 10px 10px !important;
     }
-    .containerTodosLosProductos .carta img{
-        width: 280px;
-        height: 280px;
+    .containerTodosLosProductos .carta .imgTLP{
+        width: 280px !important;
+        height: 280px !important;
     }
     .containerTodosLosProductos .carta {
-        width: 320px;
+        width: 320px !important;
     }
     main .formularioContacto {
         width: 80% !important;
@@ -176,5 +190,8 @@
     .products .product img {
         width: 300px !important;
         height: 300px !important;
+    }
+    input,textarea{
+        padding: 10px;
     }
 }

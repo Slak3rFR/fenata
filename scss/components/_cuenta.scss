@@ -1,63 +1,81 @@
-.registro {
-    color: black;
-}
-label {
-    text-align: center;
-    font-weight: bold;
-    margin: 10px;
-    padding: 10px;
-}
-input, textarea{
-    width: 100%;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 20px;
-    font-size: 16px;
-    margin: 5px;
-}
-main .formularioContacto{
-    display: inline-block;
-    width: 600px;
-    box-shadow: 1px 2px 40px rgba(0, 0, 0, 0.62);
-    border-radius: 10px;
-    margin: 30px;
-    padding: 30px;
-}
-.formularioContacto {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-    background-color: #ffffff;
-    transition-property: transform ;
-    transition-duration: 1s;
-    &:hover {
-        transform: scale(1.05);
-        border: 1px solid black;
-    }
-}
-main div form .googleBtn {
-    text-decoration: none;
-}
-.googleBtn{
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 10px 15px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid #000000;
-    font-size: 18px;
-    margin: 20px;
-    text-decoration: none;
-}
+// .registro {
+//     color: black;
+// }
 
-.imgGoogle {
-    width: 20px;
-    height: 20px;
+// main .formularioContacto{
+//     display: inline-block;
+//     width: 600px;
+//     box-shadow: 1px 2px 40px rgba(0, 0, 0, 0.62);
+//     border-radius: 10px;
+//     margin: 30px;
+//     padding: 30px;
+// }
+// .formularioContacto {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     margin: 5px;
+//     padding: 5px;
+//     background-color: #ffffff;
+//     transition-property: transform ;
+//     transition-duration: 1s;
+//     &:hover {
+//         transform: scale(1.05);
+//         border: 1px solid black;
+//     }
+// }
+// main div form .googleBtn {
+
+// }
+
+
+// .imgGoogle {
+//     width: 20px;
+//     height: 20px;
+// }
+
+main {
+    .formularioContacto {
+        display: inline-block;
+        background-color: #ffffff;
+        transition-property: transform ;
+        transition-duration: 1s;
+        box-shadow: 1px 2px 40px rgba(0, 0, 0, 0.62);
+        border-radius: 10px;
+        margin: 30px;
+        padding: 30px;
+        width: 600px;
+        &:hover {
+            transform: scale(1.05);
+            border: 1px solid black;
+        }
+        .registro {
+            color: black;
+        }
+        form {
+            .googleBtn {
+                border-radius: 20px;
+                box-sizing: border-box;
+                padding: 10px 15px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                border: 2px solid #000000;
+                font-size: 18px;
+                margin: 20px;
+                text-decoration: none;
+                .imgGoogle {
+                    width: 20px;
+                    height: 20px;
+                }
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }

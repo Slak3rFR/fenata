@@ -1,18 +1,26 @@
-main div .products .product button {
-    margin-bottom: 20px;
-}
-main .containerCarrito div .parrafoCarrito{
-    margin: 30px;
-    color: white;
-}
-.product .precio {
-    color: white;
-}
-.products p {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-}
-.products .product img {
-    width: 400px;
-    height: 400px;
+main {
+    .containerCarrito{
+        .products {
+            .product {
+                button {
+                    margin-bottom: 20px;
+                }
+                .precio {
+                    color: white;
+                }
+            }
+        }
+        .parrafoCarrito{
+            margin: 30px;
+            color: white;
+        }
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+        img {
+            width: 400px;
+            height: 400px;
+        }
+    }
 }

@@ -1,22 +1,22 @@
-.containerNosotros {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 20px;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid black;
-    justify-items: center;
-}
-.imgNosotros {
-    margin: 10px 0;
-    width: 70%;
-    height: auto;
-    
-}
-.parrafoNosotros {
-    text-align: justify;
-    color: white;
-}
-iframe {
-    margin: 50px 0;
+main {
+    .containerNosotros {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 1px solid black;
+        justify-items: center;
+        .imgNosotros {
+            margin: 10px 0;
+            width: 70%;
+            height: auto;}
+        .parrafoNosotros {
+            text-align: justify;
+            color: white;}
+    }
+    iframe {
+        margin: 50px 0;
+    }
 }
