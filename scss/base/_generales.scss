@@ -189,7 +189,6 @@ background-color: white !important;
 }
 .link:active,
 .todaslascat:active,
-.btnEnviar:active,
 .btnNav:active,
 .btnAgregarAlCarrito:active,
 .btn-secondary:active {
@@ -197,7 +196,6 @@ transform: translateY(-3px);
 }
 .link::after,
 .todaslascat::after,
-.btnEnviar::after,
 .btnNav::after,
 .btnAgregarAlCarrito::after {
 content: "";

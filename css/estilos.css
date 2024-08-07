@@ -150,7 +150,6 @@ body {
 
 .link:active,
 .todaslascat:active,
-.btnEnviar:active,
 .btnNav:active,
 .btnAgregarAlCarrito:active,
 .btn-secondary:active {
@@ -158,7 +157,6 @@ body {
 
 .link::after,
 .todaslascat::after,
-.btnEnviar::after,
 .btnNav::after,
 .btnAgregarAlCarrito::after {
   content: "";
