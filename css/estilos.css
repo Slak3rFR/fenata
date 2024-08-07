@@ -512,7 +512,8 @@ main .containerNosotros {
     height: auto; }
   main .containerNosotros .parrafoNosotros {
     text-align: justify;
-    color: white; }
+    color: white;
+    padding: 20px; }
 
 main iframe {
   margin: 50px 0; }
