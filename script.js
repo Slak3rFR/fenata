@@ -35,3 +35,6 @@ function calculateTotal() {
     total = cart.reduce((acc, item) => acc + item.price, 0);
     document.getElementById('total').textContent = total.toFixed(2);
 }
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.lista_nav').classList.toggle('active');
+});

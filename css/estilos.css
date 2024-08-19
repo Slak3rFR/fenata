@@ -21,9 +21,19 @@ body {
     body header .containerHeader {
       display: flex;
       justify-content: space-around;
-      align-items: center;
+      align-items: baseline;
       text-align: center;
       padding: 20px 0; }
+      body header .containerHeader .navbar {
+        background-color: #343838 !important; }
+        body header .containerHeader .navbar .navbar-toggler {
+          background-color: #343838;
+          height: 40px;
+          width: 56px; }
+          body header .containerHeader .navbar .navbar-toggler .navbar-toggler-icon {
+            height: 20px;
+            width: 30px;
+            filter: invert(100%); }
       body header .containerHeader .containerLogo {
         text-align: left; }
         body header .containerHeader .containerLogo .logo {
@@ -38,6 +48,7 @@ body {
         text-align: center;
         padding: 0; }
         body header .containerHeader .lista_nav .lista {
+          background-color: #343838;
           padding: 0;
           margin: 0; }
           body header .containerHeader .lista_nav .lista li {
@@ -47,6 +58,12 @@ body {
             body header .containerHeader .lista_nav .lista li .link {
               width: 150px !important;
               margin: 5px 5px; }
+          body header .containerHeader .lista_nav .lista .containerBotones {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            padding: 0; }
           body header .containerHeader .lista_nav .lista .btnNav {
             border-style: none;
             margin: 5px;
@@ -271,28 +288,36 @@ input, textarea {
     text-align: justify; } }
 
 @media (max-width: 1270px) {
-  .containerTodosLosProductos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;
-    align-content: center;
-    justify-items: center;
-    column-gap: 10px;
-    margin-bottom: 30px;
-    padding: 5px;
-    text-align: justify; }
-    .containerTodosLosProductos .carta {
-      width: 450px; }
-      .containerTodosLosProductos .carta .imgTLP {
-        width: 400px;
-        height: 400px; } }
+  .containerHeader {
+    flex-direction: column;
+    align-items: center !important; }
+    .containerHeader .containerTodosLosProductos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) !important;
+      align-content: center;
+      justify-items: center;
+      column-gap: 10px;
+      margin-bottom: 30px;
+      padding: 5px;
+      text-align: justify; }
+      .containerHeader .containerTodosLosProductos .carta {
+        width: 450px; }
+        .containerHeader .containerTodosLosProductos .carta .imgTLP {
+          width: 400px;
+          height: 400px; } }
 
 @media (max-width: 1060px) {
   body header .containerHeader {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
     body header .containerHeader .containerLogo .logo {
       margin: 10px; }
-    body header .containerHeader .lista_nav .lista li .link {
-      width: 130px; }
+    body header .containerHeader .lista_nav .lista {
+      flex-direction: row; }
+      body header .containerHeader .lista_nav .lista li .link {
+        width: 130px; }
+      body header .containerHeader .lista_nav .lista .btnNav {
+        padding: 0; }
   body header .imgCarrusel {
     height: 700px !important; }
   body main .containerTodasLasCat .todasLasCatParrafo {
@@ -311,6 +336,10 @@ input, textarea {
 @media (max-width: 930px) {
   .containerImagen img {
     height: 600px !important; }
+  .lista {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; }
   .containerTodosLosProductos {
     display: grid;
     grid-template-columns: repeat(1, 1fr) !important;
@@ -349,10 +378,25 @@ input, textarea {
   main section div .parrafoCarrusel {
     font-size: 14px !important; } }
 
+@media (max-width: 720px) {
+  .lista_nav {
+    flex-direction: row !important; } }
+
 @media (max-width: 550px) {
-  body header div nav ul li .link {
-    width: 100px;
+  .containerLogo {
+    text-align: center !important; }
+  .containerHeader {
+    align-items: stretch !important;
+    align-content: stretch; }
+  body header .containerHeader .lista_nav .lista li .link {
+    width: 80% !important;
     margin: 10px; }
+  .lista_nav {
+    justify-content: flex-start !important; }
+    .lista_nav .lista {
+      flex-direction: column !important; }
+  .containerBotones {
+    justify-content: space-evenly !important; }
   .containerImagen img {
     height: 500px !important; }
   .containerImagen .tituloPrincipal {

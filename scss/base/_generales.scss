@@ -29,9 +29,22 @@ body {
             .containerHeader {
             display: flex;
             justify-content: space-around;
-            align-items: center;
+            align-items: baseline;
             text-align: center;
-            padding: 20px 0;   
+            padding: 20px 0; 
+                .navbar {
+                    background-color: $color-fondo !important;
+                    .navbar-toggler{
+                        background-color: $color-fondo;
+                        height: 40px;
+                        width: 56px;
+                        .navbar-toggler-icon {
+                            height: 20px;
+                            width: 30px;
+                            filter: invert(100%);
+                        }
+                    }
+                }
                 .containerLogo{
                     text-align: left;                
                     .logo {
@@ -40,14 +53,15 @@ body {
                     }     
                 }       
                 .lista_nav {
-                text-align: center;
-                text-decoration: none;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                text-align: center;
-                padding: 0;                    
+                        text-align: center;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        text-align: center;
+                        padding: 0;                   
                     .lista {
+                    background-color: $color-fondo;
                     padding: 0;
                     margin: 0;                
                         li {
@@ -58,7 +72,14 @@ body {
                             width: 150px !important;
                             margin: 5px 5px;  
                             }
-                        }   
+                        }
+                        .containerBotones {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            margin: 0;
+                            padding: 0;
+                        } 
                     .btnNav {
                     border-style: none;
                     margin: 5px;

@@ -10,7 +10,8 @@
     <meta name="keywords" content="Ropa de hombre, moda, elegancia, jeanes, camisas, pantalones, accesorios">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Fenata - ropa de hombre">
-    <meta property="og:description" content="Descubre la última moda para hombres en Fenata. Ofrecemos ropa elegante y moderna para todas las ocasiones.">
+    <meta property="og:description"
+        content="Descubre la última moda para hombres en Fenata. Ofrecemos ropa elegante y moderna para todas las ocasiones.">
     <meta property="og:url" content="https://fenata.netlify.app/">
     <meta property="og:image" content="../proyecto-coder/img/fenata.png">
     <link rel="shortcut icon" href="./img/7.svg" type="image/x-icon">
@@ -28,26 +29,46 @@
             <a class="containerLogo" href="./index.html">
                 <img class="logo" src="./img/fenata3.png" alt="Logo de Fenata">
             </a>
-            <nav class="lista_nav">
-                <ul class="lista">
-                    <li><a class="link" href="./index.html">Inicio</a></li>
-                    <li><a class="link" href="./pages/productos.html">Productos</a></li>
-                    <li><a class="link" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a class="link" href="./pages/contacto.html">Contacto</a></li>
-                    <button class="btnNav" href="#">
-                        <img class="imgNav" src="./img/iconos.img/buscar2.svg" alt="imagen boton buscar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid lista_nav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <button class="btnNav" href="#">
-                        <a href="./pages/carrito.html">
-                            <img class="imgNav" src="./img/iconos.img/carritodecompras.svg" alt="imagen boton carrito">
-                        </a>
-                    </button>
-                    <button class="btnNav" href="#">
-                        <a href="./pages/cuenta.html">
-                            <img class="imgNav" src="./img/iconos.img/usuario2.svg" alt="imagen boton user">
-                        </a>
-                    </button>
-                </ul>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto lista">
+                            <li class="nav-item">
+                                <a class="nav-link link" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link" href="./pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                            <div class="containerBotones">
+                                <li class="nav-item">
+                                    <a class="nav-link btnNav" href="#">
+                                        <img class="imgNav" src="./img/iconos.img/buscar2.svg" alt="Buscar" width="25">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btnNav" href="./pages/carrito.html">
+                                        <img class="imgNav" src="./img/iconos.img/carritodecompras.svg" alt="Carrito" width="25">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btnNav" href="./pages/cuenta.html">
+                                        <img class="imgNav" src="./img/iconos.img/usuario2.svg" alt="Usuario" width="25">
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
         <div class="containerImagen">
