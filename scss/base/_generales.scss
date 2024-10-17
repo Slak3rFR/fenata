@@ -304,6 +304,7 @@ input, textarea{
     background: fixed;
     img {
         width: 80px;
+        height: 80px !important;
         cursor: pointer;
     }
 }
@@ -320,4 +321,12 @@ input, textarea{
     background-color: $color-fondo;
     border: 1px solid white;
 }
-
+.custom-popup-size {
+    width: 400px;  
+    height: 200px; 
+    font-size: 18px;
+}
+.parrafoPago {
+    font-size: 140px;
+    color: white;
+}

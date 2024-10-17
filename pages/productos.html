@@ -57,6 +57,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link btnNav" href="./carrito.html">
                                         <img class="imgNav" src="../img/iconos.img/carritodecompras.svg" alt="Carrito" width="25">
+                                        <span id="cart-count" class="badge bg-secondary">0</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -76,7 +77,7 @@
         </div>
     </header>
     <main>
-        <div class="dropdown dropdownProductos">
+        <!-- <div class="dropdown dropdownProductos">
             <button class="btn btn-secondary dropdown-toggle btnTLP" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Todos los productos
@@ -91,7 +92,7 @@
                 <li><a class="dropdown-item" href="#">Remeras</a></li>
                 <li><a class="dropdown-item" href="#">Zapatillas</a></li>
             </ul>
-        </div>
+        </div> -->
         <p class="parrafoProductos">
             En nuestra marca de ropa, nos destacamos por ofrecer prendas de excepcional calidad, hechas con los mejores
             materiales y una atención cuidadosa a cada detalle. Nos esforzamos por proporcionar un servicio al cliente
@@ -106,130 +107,146 @@
         <p>
         <div class="containerTodosLosProductos">
             <div class="card carta">
-                <img src="../img/camisa cuadros.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/camisa cuadros.jpg" class="card-img-top imgTLP" alt="Camisa a cuadritos">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Camisa a cuadritos</h3>
-                    <p class="card-text">Camisas de seda, varios modelos y colores en stock</p>
+                    <p class="card-text">$40.000</p>
+                    <p>Camisas de seda, varios modelos y colores en stock</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/camisa.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/camisa.jpg" class="card-img-top imgTLP" alt="Camisa lisa">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Camisa lisa</h3>
-                    <p class="card-text">Camisas de algodón fino, varios colores en stock</p>
+                    <p class="card-text">$32.000</p>
+                    <p>Camisas de algodón fino, varios colores en stock</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/camisayzapato.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/camisayzapato.jpg" class="card-img-top imgTLP" alt="Zapatos marrones">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Zapatos</h3>
-                    <p class="card-text">Zapatos de cuero marrón, con taco reforzado</p>
+                    <p class="card-text">$54.000</p>
+                    <p>Zapatos de cuero marrón, con taco reforzado</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/cinto.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/cinto.jpg" class="card-img-top imgTLP" alt="Cinto varios colores">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Cintos</h3>
-                    <p class="card-text">Cintos de cuero con varias medidas y colores</p>
+                    <p class="card-text">$25.000</p>
+                    <p>Cintos de cuero con varias medidas y colores</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/Crocs.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/Crocs.jpg" class="card-img-top imgTLP" alt="Crocs">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Crocs</h3>
-                    <p class="card-text">Crcos en todos los talles y colores del mercado</p>
+                    <p class="card-text">$26.000</p>
+                    <p>Crcos en todos los talles y colores del mercado</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/jeanes.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/jeanes.jpg" class="card-img-top imgTLP" alt="Jeanes">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Jean</h3>
-                    <p class="card-text">Jeanes todos los talles y varios colores, skinny</p>
+                    <p class="card-text">$48.000</p>
+                    <p>Jeanes todos los talles y varios colores, skinny</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/nike.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/nike.jpg" class="card-img-top imgTLP" alt="Zapatillas Nike">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Zapatillas Nike</h3>
-                    <p class="card-text">Zapatillas Nike, único modelo disponible</p>
+                    <p class="card-text">$140.000</p>
+                    <p>Zapatillas Nike, único modelo disponible</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/pantalon.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/pantalon.jpg" class="card-img-top imgTLP" alt="Pantalon corte chino">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Pantalon corte chino</h3>
-                    <p class="card-text">Pantalon corte chino en varios colores y talles</p>
+                    <p class="card-text">$37.000</p>
+                    <p>Pantalon corte chino en varios colores y talles</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/Zapas.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/Zapas.jpg" class="card-img-top imgTLP" alt="Zapatillas Converse">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Zapatillas Converse</h3>
-                    <p class="card-text">Zapatillas Converse tipo botitas, todos los talles</p>
+                    <p class="card-text">$130.000</p>
+                    <p>Zapatillas Converse tipo botitas, todos los talles</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/remeras.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/remeras.jpg" class="card-img-top imgTLP" alt="Remera básica">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Remera básica</h3>
-                    <p class="card-text">Remeras básicas varios colores y talles</p>
+                    <p class="card-text">$24.000</p>
+                    <p>Remeras básicas varios colores y talles</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/basicaNegra.png" class="card-img-top imgTLP" alt="...">
+                <img src="../img/basicaNegra.png" class="card-img-top imgTLP" alt="Remera Oversize">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Remera Oversize</h3>
-                    <p class="card-text">Remera básica Oversize, varios colores talle único</p>
+                    <p class="card-text">$30.000</p>
+                    <p>Remera básica Oversize, varios colores talle único</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/campera.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/campera.jpg" class="card-img-top imgTLP" alt="Campera Inflable">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Campera inflable</h3>
-                    <p class="card-text">Campera inflable color único, varios talles</p>
+                    <p class="card-text">$110.000</p>
+                    <p>Campera inflable color único, varios talles</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/medias.png" class="card-img-top imgTLP" alt="...">
+                <img src="../img/medias.png" class="card-img-top imgTLP" alt="Medias">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Medias media caña</h3>
-                    <p class="card-text">Medias media caña, varios colores y modelos</p>
+                    <p class="card-text">$7.000</p>
+                    <p>Medias media caña, varios colores y modelos</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/nuevoingreso1.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/nuevoingreso1.jpg" class="card-img-top imgTLP" alt="Camisa manga larga">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Camiseta manga larga</h3>
-                    <p class="card-text">Camiseta manga larga, varios colores y talles</p>
+                    <p class="card-text">$42.000</p>
+                    <p>Camiseta manga larga, varios colores y talles</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/nuevoingreso3.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/nuevoingreso3.jpg" class="card-img-top imgTLP" alt="Campera Puffer">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Campera Puffer</h3>
-                    <p class="card-text">Campera Puffer varios colores, talle XL</p>
+                    <p class="card-text">$120.000</p>
+                    <p>Campera Puffer varios colores, talle XL</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
             <div class="card carta">
-                <img src="../img/nuevoingreso2.jpg" class="card-img-top imgTLP" alt="...">
+                <img src="../img/nuevoingreso2.jpg" class="card-img-top imgTLP" alt="Camisa importada">
                 <div class="card-body divTLP">
                     <h3 class="card-title">Camisa importada</h3>
-                    <p class="card-text">Camisa importada de seda, único color, varios talles</p>
+                    <p class="card-text">$60.000</p>
+                    <p>Camisa importada de seda, único color, varios talles</p>
                     <a href="#" class="btn btn-primary btnAgregarAlCarrito">Agregar al carrito</a>
                 </div>
             </div>
@@ -241,7 +258,7 @@
         </div>
     </main>
     <footer>
-        <h4>© Fenata.Todos los derechos reservados</h4>
+        <h4>© Fenata. Todos los derechos reservados</h4>
         <div class="containerFooter">
             <ul class="iconosFooter">
                 <li><a href="https://www.tiktok.com" target="_blank">
@@ -254,7 +271,7 @@
                         <img class="imgFooter" src="../img/iconos.img/whatsappwhite.png" alt="Whatsapp icon">
                     </a></li>
                 <li><a href="https://www.facebook.com/fenataok" target="_blank">
-                        <img class="imgFooter" src="../img/iconos.img/facebookwhite.png" alt="Whatsapp icon">
+                        <img class="imgFooter" src="../img/iconos.img/facebookwhite.png" alt="Facebook icon">
                     </a></li>
             </ul>
         </div>
@@ -262,6 +279,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

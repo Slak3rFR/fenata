@@ -1,19 +1,13 @@
 main {
-    .containerCarrito{
-        .products {
-            .product {
-                button {
-                    margin-bottom: 20px;
-                }
-                .precio {
-                    color: white;
-                }
-            }
+    .tituloCarrito{
+        color: white;
+        margin: 30px;
+        font-size: 40px;
         }
-        .parrafoCarrito{
-            margin: 30px;
+        .totalCarrito{
             color: white;
-        }
+            margin: 30px;
+            }
         p {
             color: rgb(0, 0, 0);
             font-size: 20px;
@@ -22,5 +16,7 @@ main {
             width: 400px;
             height: 400px;
         }
+    #total {
+        color: white;
     }
 }

@@ -261,6 +261,7 @@ input, textarea {
   background: fixed; }
   .whatsappBtn img {
     width: 80px;
+    height: 80px !important;
     cursor: pointer; }
 
 .btnEnviar {
@@ -275,6 +276,15 @@ input, textarea {
   font-size: 16px;
   background-color: #343838;
   border: 1px solid white; }
+
+.custom-popup-size {
+  width: 400px;
+  height: 200px;
+  font-size: 18px; }
+
+.parrafoPago {
+  font-size: 140px;
+  color: white; }
 
 @media (max-width: 1450px) {
   .containerTodosLosProductos {
@@ -525,7 +535,7 @@ main .containerTodosLosProductos {
   main .containerTodosLosProductos .carta {
     display: grid;
     width: 400px;
-    height: 550px;
+    height: 620px;
     text-align: center;
     margin: 10px 0;
     padding: 0 auto;
@@ -566,23 +576,25 @@ main .parrafoContacto {
   width: 80%;
   text-align: center; }
 
-main .containerCarrito .products .product button {
-  margin-bottom: 20px; }
-
-main .containerCarrito .products .product .precio {
-  color: white; }
-
-main .containerCarrito .parrafoCarrito {
+main .tituloCarrito {
+  color: white;
   margin: 30px;
-  color: white; }
+  font-size: 40px; }
 
-main .containerCarrito p {
+main .totalCarrito {
+  color: white;
+  margin: 30px; }
+
+main p {
   color: black;
   font-size: 20px; }
 
-main .containerCarrito img {
+main img {
   width: 400px;
   height: 400px; }
+
+main #total {
+  color: white; }
 
 main .formularioContacto {
   display: inline-block;
