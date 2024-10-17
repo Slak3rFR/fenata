@@ -27,7 +27,7 @@ const Carrito = {
         this.render();
         this.actualizarTotal();
         this.actualizarContadorCarrito();
-        this.actualizarEstadoDelBoton();  // Actualizar el estado del botón de proceder al pago
+        this.actualizarEstadoDelBoton(); 
     },
     // Eliminar un producto del carrito por índice
     eliminarElemento: function(index) {
@@ -51,15 +51,15 @@ const Carrito = {
         this.render();
         this.actualizarTotal();
         this.actualizarContadorCarrito();
-        this.actualizarEstadoDelBoton();  // Actualizar el estado del botón de proceder al pago
+        this.actualizarEstadoDelBoton(); 
     },
     // Calcular el total del carrito
     calcularTotal: function() {
         return this.elementos.reduce((acc, elemento) => acc + elemento.price * elemento.quantity, 0);
     },
-    // Actualizar el total en el DOM (solo si totalElement existe)
+    // Actualizar el total en el DOM (solo si totalElementos existe)
     actualizarTotal: function() {
-        if (totalElementos) { // Verificar si totalElement existe
+        if (totalElementos) { // Verificar si totalElementos existe
             const total = this.calcularTotal();
             totalElementos.textContent = `${total.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
         }
@@ -72,9 +72,9 @@ const Carrito = {
             console.error('Error al guardar el carrito en localStorage', e);
         }
     },
-    // Actualizar el contador del carrito en el icono (solo si cartCountElement existe)
+    // Actualizar el contador del carrito en el icono (solo si contadorElementosCarrito existe)
     actualizarContadorCarrito: function() {
-        if (contadorElementosCarrito) { // Verificar si cartCountElement existe
+        if (contadorElementosCarrito) { // Verificar si contadorElementosCarrito existe
             const totalElementos = this.elementos.reduce((sum, item) => sum + item.quantity, 0);
             contadorElementosCarrito.textContent = totalElementos;
         }
@@ -89,9 +89,9 @@ const Carrito = {
             }
         }
     },
-    // Renderizar el carrito en el DOM (solo si cartElement existe)
+    // Renderizar el carrito en el DOM (solo si elementoCarrito existe)
     render: function() {
-        if (!elementoCarrito) return; // Salir si cartElement no existe
+        if (!elementoCarrito) return; // Salir si elementoCarrito no existe
         elementoCarrito.innerHTML = '';
         if (this.elementos.length === 0) {
             elementoCarrito.innerHTML = '<p class="parrafoCarrito text-white">El carrito está vacío.</p>';
@@ -178,7 +178,6 @@ if (vaciarCarritoButton) { // Verificar si vaciarCarritoButton existe
 // ** Redirección al Pago **
 if (botonProcederAlPago) {
     botonProcederAlPago.addEventListener('click', function() {
-        // Puedes pasar información adicional al URL, si lo deseas (por ejemplo, el total de la compra)
         window.location.href = 'pago.html';  // Redirige al usuario a la página de pago
     });
 }
@@ -189,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const agregarCarritoButtons = document.querySelectorAll('.btnAgregarAlCarrito');
     agregarCarritoButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault(); // Evitar comportamiento por defecto del enlace
+            e.preventDefault(); // Evita comportamiento por defecto del enlace
             const cartaProducto = this.closest('.card');
             const tituloProducto = cartaProducto.querySelector('.card-title').textContent;
             const precioProducto = cartaProducto.querySelector('.card-text').textContent;
