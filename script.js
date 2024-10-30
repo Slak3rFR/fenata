@@ -112,7 +112,7 @@ class Carrito {
 // ** Manejo de Promesas y Fetch para Cargar Productos **
 async function cargarProductos() {
     try {
-        const response = await fetch('../productos.json');
+        const response = await fetch('./productos.json');
         const productos = await response.json();
         console.log(productos); 
         mostrarProductos(productos);
