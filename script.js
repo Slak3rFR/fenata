@@ -1,9 +1,9 @@
 // ** Variables del DOM **
-const elementoCarrito = document.getElementById('cart'); // Asegúrate de que el id coincida con tu HTML
+const elementoCarrito = document.getElementById('cart');
 const contadorElementosCarrito = document.getElementById('cart-count');
 const botonProcederAlPago = document.getElementById('proceed-to-payment');
 const vaciarCarritoButton = document.getElementById('vaciar-carrito');
-const totalElementos = document.getElementById('total'); // Asegúrate de tener este contenedor en tu HTML
+const totalElementos = document.getElementById('total');
 
 // ** Clase Carrito para Manejar las Operaciones **
 class Carrito {
@@ -11,7 +11,7 @@ class Carrito {
         this.elementos = [];
         this.init();
     }
-    // Inicializar el carrito desde localStorage
+    // Iniciar el carrito desde localStorage
     init() {
         const storedCart = localStorage.getItem('cart');
         if (storedCart) this.elementos = JSON.parse(storedCart);
@@ -72,8 +72,8 @@ class Carrito {
         }
     }
     // Actualizar el total del carrito en el DOM
-    actualizarTotal () {
-        if (totalElementos) { // Verificar si totalElementos existe
+    actualizarTotal() {
+        if (totalElementos) { 
             const total = this.calcularTotal();
             totalElementos.textContent = `${total.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
         }
@@ -102,7 +102,6 @@ class Carrito {
             `;
             elementoCarrito.appendChild(elementoDiv);
         });
-
         // Asignar eventos a los botones de eliminar
         elementoCarrito.querySelectorAll('button[data-index]').forEach(button => {
             button.addEventListener('click', () => this.eliminarElemento(button.getAttribute('data-index')));
@@ -115,7 +114,7 @@ async function cargarProductos() {
     try {
         const response = await fetch('../productos.json');
         const productos = await response.json();
-        console.log(productos); // Agrega esto para ver qué productos se cargan
+        console.log(productos); 
         mostrarProductos(productos);
     } catch (error) {
         console.error("Error al cargar los productos:", error);
@@ -129,7 +128,6 @@ function mostrarProductos(productos) {
         console.error("No se encontró el elemento productos-container");
         return;
     }
-
     productos.forEach(producto => {
         const productoDiv = document.createElement('div');
         productoDiv.classList.add('card');
@@ -145,10 +143,9 @@ function mostrarProductos(productos) {
         </div>
     `;
         productosContainer.appendChild(productoDiv);
-
-        productoDiv.querySelector('.btnAgregarAlCarrito').addEventListener('click', function(event) {
-            event.preventDefault(); // Evitar recargar la página
-            console.log("Botón presionado"); // Verificar si se activa el evento
+        productoDiv.querySelector('.btnAgregarAlCarrito').addEventListener('click', function (event) {
+            event.preventDefault(); 
+            console.log("Botón presionado"); 
             carrito.añadirElemento(producto.nombre, producto.precio);
             Swal.fire({
                 icon: 'success',
@@ -159,17 +156,19 @@ function mostrarProductos(productos) {
                 position: 'center',
                 toast: true
             });
-        });        
+        });
     });
 }
+
 if (botonProcederAlPago) {
-    botonProcederAlPago.addEventListener('click', function() {
+    botonProcederAlPago.addEventListener('click', function () {
         window.location.href = 'pago.html';  // Redirige al usuario a la página de pago
     });
 }
+
 // ** Manejo de Eventos para Vaciar el Carrito **
-if (vaciarCarritoButton) { // Verificar si vaciarCarritoButton existe
-    vaciarCarritoButton.addEventListener('click', function() {
+if (vaciarCarritoButton) { 
+    vaciarCarritoButton.addEventListener('click', function () {
         if (carrito.elementos.length === 0) {
             Swal.fire({
                 icon: 'info',
@@ -202,8 +201,7 @@ if (vaciarCarritoButton) { // Verificar si vaciarCarritoButton existe
 }
 
 // ** Inicializar Carrito y Cargar Productos al Cargar la Página **
-let carrito; 
-
+let carrito;
 document.addEventListener('DOMContentLoaded', () => {
     carrito = new Carrito();
     if (window.location.pathname.includes('productos.html')) {
