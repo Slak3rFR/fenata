@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* RESET */
@@ -286,6 +287,20 @@ input, textarea {
   font-size: 140px;
   color: white; }
 
+.card {
+  width: 100% !important;
+  height: 520px !important;
+  margin: 1rem !important;
+  overflow: hidden; }
+
+.card-img-top {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: cover !important; }
+
+.divTLP {
+  padding: 1rem !important; }
+
 @media (max-width: 1450px) {
   .containerTodosLosProductos {
     display: grid;
@@ -532,6 +547,19 @@ main .containerTodosLosProductos {
   margin-bottom: 30px;
   padding: 5px;
   text-align: justify; }
+  main .containerTodosLosProductos .card-body {
+    height: 150px !important;
+    /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    /* Oculta el texto que excede la altura */
+    text-overflow: ellipsis;
+    /* Muestra "..." si el texto es demasiado largo */
+    display: -webkit-box;
+    /* Para compatibilidad con WebKit */
+    -webkit-box-orient: vertical;
+    /* Orienta el contenido verticalmente */
+    -webkit-line-clamp: 3;
+    /* Limita el número de líneas visibles */ }
   main .containerTodosLosProductos .carta {
     display: grid;
     width: 400px;
@@ -548,6 +576,8 @@ main .containerTodosLosProductos {
       margin: 10px;
       padding: 10px;
       justify-items: center; }
+    main .containerTodosLosProductos .carta p {
+      height: 60px; }
 
 main .containerNosotros {
   display: grid;

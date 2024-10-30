@@ -330,3 +330,17 @@ input, textarea{
     font-size: 140px;
     color: white;
 }
+.card {
+    width: 100% !important; 
+    height: 520px !important;
+    margin: 1rem !important; 
+    overflow: hidden; 
+}
+.card-img-top {
+    width: 100% !important; 
+    height: 300px !important; 
+    object-fit: cover !important; 
+}
+.divTLP {
+    padding: 1rem !important; 
+}

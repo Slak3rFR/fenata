@@ -32,6 +32,14 @@ main {
         margin-bottom: 30px;
         padding: 5px;
         text-align: justify;
+        .card-body {
+            height: 150px !important; /* Ajusta la altura según tus necesidades */
+            overflow: hidden; /* Oculta el texto que excede la altura */
+            text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
+            display: -webkit-box; /* Para compatibilidad con WebKit */
+            -webkit-box-orient: vertical; /* Orienta el contenido verticalmente */
+            -webkit-line-clamp: 3; /* Limita el número de líneas visibles */
+        }
         .carta {
             display: grid;
             width: 400px;
@@ -48,6 +56,9 @@ main {
                 margin: 10px;
                 padding: 10px;
                 justify-items: center;
+            }
+            p {
+                height: 60px;
             }
         }
     }
